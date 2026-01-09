@@ -1,8 +1,253 @@
 <!doctype html>
-<html>
-  <head><meta charset="utf-8"><title>NewraFrame</title></head>
-  <body>
-    <h1>NewraFrame Legal</h1>
-    <a href="./legal/fitbud-privacy.html">FitBud Privacy Policy</a>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0b0c" />
+  <title>NewraFrame — Modern apps, built with precision</title>
+  <meta name="description" content="NewraFrame builds modern mobile apps with a focus on performance, privacy, and design." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="NewraFrame" />
+  <meta property="og:description" content="Modern apps, built with precision." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./assets/logo.png" />
+
+  <link rel="preload" href="./styles.css" as="style" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <!-- subtle background effects -->
+  <div class="bg">
+    <div class="bg__orb bg__orb--a"></div>
+    <div class="bg__orb bg__orb--b"></div>
+    <div class="bg__grid"></div>
+    <div class="bg__vignette"></div>
+  </div>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#top" aria-label="NewraFrame Home">
+        <img src="./assets/logo.png" alt="NewraFrame logo" class="brand__logo" />
+        <span class="brand__name">NewraFrame</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#principles">Principles</a>
+        <a href="#contact">Contact</a>
+        <a class="pill" href="./legal/fitbud-privacy.html">Privacy Policy</a>
+      </nav>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav__mobile" hidden>
+      <a href="#work">Work</a>
+      <a href="#principles">Principles</a>
+      <a href="#contact">Contact</a>
+      <a href="./legal/fitbud-privacy.html">Privacy Policy</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__left">
+          <div class="kicker">Mobile • Cloud • AI</div>
+          <h1 class="hero__title">
+            Modern apps,
+            <span class="shine">built with precision</span>.
+          </h1>
+          <p class="hero__subtitle">
+            NewraFrame builds performance-first mobile experiences with clean architecture,
+            thoughtful UX, and privacy-respecting systems.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#contact">Get in touch</a>
+            <a class="btn btn--ghost" href="#work">See our work</a>
+          </div>
+
+          <div class="hero__meta">
+            <div class="metaCard">
+              <div class="metaCard__label">Focus</div>
+              <div class="metaCard__value">Android • iOS</div>
+            </div>
+            <div class="metaCard">
+              <div class="metaCard__label">Stack</div>
+              <div class="metaCard__value">React Native • Firebase</div>
+            </div>
+            <div class="metaCard">
+              <div class="metaCard__label">Ethos</div>
+              <div class="metaCard__value">Security • Clarity</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__right" aria-hidden="true">
+          <div class="card3d">
+            <div class="card3d__top">
+              <img src="./assets/logo.png" alt="" />
+            </div>
+            <div class="card3d__bottom">
+              <div class="line"></div>
+              <div class="specs">
+                <div><span>Build</span><b>Release-ready</b></div>
+                <div><span>Design</span><b>Dark / Chrome</b></div>
+                <div><span>Ops</span><b>Scalable</b></div>
+              </div>
+              <div class="line"></div>
+              <div class="micro">
+                Crafted for smooth UX, safe data flows, and predictable performance.
+              </div>
+            </div>
+          </div>
+          <div class="glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Work</h2>
+          <p>Product-level builds with production discipline. A few highlights.</p>
+        </div>
+
+        <div class="grid">
+          <article class="tile">
+            <div class="tile__top">
+              <div class="badge">Mobile App</div>
+              <h3>FitBud</h3>
+              <p>Fitness tracking, analytics, and coaching-style insights.</p>
+            </div>
+            <div class="tile__bottom">
+              <a class="link" href="./legal/fitbud-privacy.html">Privacy Policy →</a>
+            </div>
+          </article>
+
+          <article class="tile">
+            <div class="tile__top">
+              <div class="badge">Backend</div>
+              <h3>Secure Services</h3>
+              <p>API key protection, rate limits, and authenticated endpoints.</p>
+            </div>
+            <div class="tile__bottom">
+              <span class="muted">Server-side by default</span>
+            </div>
+          </article>
+
+          <article class="tile">
+            <div class="tile__top">
+              <div class="badge">Design</div>
+              <h3>Dark Chrome Identity</h3>
+              <p>Minimal layouts, crisp typography, and subtle depth.</p>
+            </div>
+            <div class="tile__bottom">
+              <span class="muted">Premium feel</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="principles" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Principles</h2>
+          <p>How we build: fast, safe, and maintainable.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="panel">
+            <h3>Security first</h3>
+            <ul>
+              <li>Keep secrets server-side (keys never shipped in app bundles).</li>
+              <li>Authenticated APIs and sensible rate limits.</li>
+              <li>Least-privilege access and secure storage rules.</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>Performance & polish</h3>
+            <ul>
+              <li>Fast startup, responsive UI, clean navigation.</li>
+              <li>Crash visibility and production diagnostics.</li>
+              <li>Consistency across Android and iOS.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact">
+          <div>
+            <h2>Contact</h2>
+            <p>
+              For support, business, or partnerships:
+              <a class="link" href="mailto:support@newraframe.com">support@newraframe.com</a>
+            </p>
+            <p class="muted">
+              You can also link your Play developer page or social profiles here later.
+            </p>
+          </div>
+
+          <div class="contact__card">
+            <div class="contact__row">
+              <span>Privacy</span>
+              <a class="pill pill--small" href="./legal/fitbud-privacy.html">View policy</a>
+            </div>
+            <div class="contact__row">
+              <span>Status</span>
+              <span class="ok">Operational</span>
+            </div>
+            <div class="contact__row">
+              <span>Location</span>
+              <span>Ontario, Canada</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> NewraFrame</span>
+      <span class="footer__links">
+        <a href="./legal/fitbud-privacy.html">Privacy Policy</a>
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    // footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // mobile nav toggle
+    const toggle = document.querySelector('.nav__toggle');
+    const mobile = document.querySelector('.nav__mobile');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      mobile.hidden = open;
+      document.body.classList.toggle('no-scroll', !open);
+    });
+
+    // close mobile nav on click
+    mobile.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        toggle.setAttribute('aria-expanded', 'false');
+        mobile.hidden = true;
+        document.body.classList.remove('no-scroll');
+      });
+    });
+  </script>
+</body>
 </html>
