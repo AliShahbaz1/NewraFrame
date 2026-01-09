@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FitBuild Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 16px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      color: #111;
+    }
+    h1, h2, h3 {
+      line-height: 1.25;
+    }
+  </style>
+</head>
+<body>
+
+# FitBud Privacy Policy
+Published by NewraFrame
+
+Last updated: 2026-01-09
+
+This Privacy Policy explains how FitBud (“FitBud”, “we”, “us”) collects, uses, and shares information when you use the FitBud mobile application (the “App”).
+
+---
+
+## 1) Information We Collect
+
+### A) Account information
+When you create an account or sign in, we collect:
+- Email address and authentication credentials (handled by Firebase Authentication)
+- Profile information you provide (such as display name)
+
+We also process your Firebase user ID (“UID”), which is used to store your data under your account.
+
+### B) Fitness and workout information
+The App is designed to help you track training. Depending on your use, we collect and store:
+- Workouts (exercise selection, sets/reps/weights, timestamps, notes)
+- Routines and goals
+- Personal records (PRs)
+- Training preferences and onboarding answers (such as experience level, frequency, goals, and optionally metrics like age/height/weight if you provide them)
+
+### C) Health data (Health Connect)
+If you connect Android Health Connect and grant permissions, the App can read and/or write:
+- Exercise sessions
+- Calories burned (active/total)
+- Heart rate
+- Weight
+
+Health data is only accessed if you explicitly grant permission and is used solely to provide fitness-related features.
+
+You can revoke Health Connect permissions at any time in Android settings.
+
+### D) Photos and camera
+If you choose to upload or capture images, we collect and store:
+- Profile photos
+- Workout photos
+
+These are stored in Firebase Storage under your account. For cloud synchronization purposes across multiple devices.
+
+### E) Gym discovery and gym popularity
+If you use gym search and “gym popularity” features, we process:
+- Your gym search queries (sent to our server endpoints to retrieve results)
+- Gym identifiers (such as Google Place IDs)
+
+Gym popularity results and rate-limit counters are stored under your account in our database.
+
+### F) Device and app information
+We may collect:
+- Device identifier used to associate workout entries with a device
+- App version
+
+### G) Diagnostics
+We collect crash reports and related logs to help diagnose and fix issues, via Firebase Crashlytics.
+
+---
+
+## 2) How We Use Information
+
+We use the information above to:
+- Provide core App functionality (saving workouts, routines, goals, PRs)
+- Sync your data across devices (via Firebase)
+- Personalize your experience (recommendations, training plans, progress views)
+- Enable gym search and gym popularity features
+- Send and manage notifications you request or enable (for example, recovery reminders)
+- Improve reliability and performance (debugging, crash analysis)
+- Provide AI-powered coaching and workout audit features (see Section 4)
+
+---
+
+## 3) How We Share Information
+
+We do not sell your personal information.
+
+We share information in the following limited ways:
+
+### A) Service providers / processors
+We use third-party services to operate the App:
+- Google Firebase (Authentication, Firestore, Storage, Cloud Functions, Crashlytics)
+- Google Cloud services used by our backend
+
+These providers process information on our behalf to deliver App features.
+
+### B) External APIs used by backend
+Some features require our backend to call external APIs. In those cases, we send only the information needed to provide the feature:
+- Google Places API (for gym search autocomplete)
+- SerpAPI (for gym popularity data; performed server-side)
+- Google Gemini API (for AI coaching and workout audits; performed server-side)
+
+### D) Legal and safety
+We may disclose information if required by law, or to protect the rights, safety, and security of users and the App.
+
+---
+
+## 4) AI Coach / Workout Audit Processing
+
+If you use AI Coach or workout audit features, we process your workout/training context (such as exercises, sets, PRs, goals, and preferences) to generate:
+- Coaching responses
+- Workout summaries
+- Suggestions and audits
+
+This processing is performed by our backend services and may involve sending relevant context to the Google Gemini API to produce responses.
+
+We do not intend to use your data to train general-purpose AI models; however, the external AI provider processes inputs and outputs according to their own terms and privacy policies.
+
+---
+
+## 5) Data Retention
+
+We retain your account and fitness data for as long as your account is active, or as needed to provide the App.
+
+Some diagnostic data (e.g., crash logs) may be retained for a limited period by our providers.
+
+If you delete your account (or request deletion), we will delete or de-identify data associated with your account, subject to legal requirements and limited technical constraints.
+
+---
+
+## 6) Your Choices and Controls
+
+- Account information: You can update your profile information in the App.
+- Health Connect: You can grant or revoke Health Connect permissions in Android settings.
+- Photos: You can choose whether to upload photos.
+- Notifications: You can enable/disable notifications in the App and system settings.
+
+---
+
+## 7) Security
+
+We use Firebase security rules and authenticated access controls to protect user data. No method of transmission or storage is 100% secure, but we use reasonable safeguards appropriate to the App’s architecture.
+
+---
+
+## 8) Children
+
+The App is not intended for children under 13 (or the applicable age in your jurisdiction). If you believe a child has provided personal information, contact us so we can take appropriate action.
+
+---
+
+## 9) Contact Us
+
+If you have questions or requests regarding privacy, contact:
+- Email: support@newraframe.com
+- Developer/Company: NewraFrame
+
+---
+
+## 10) Changes to This Policy
+
+We may update this policy from time to time. We will post the updated version in the App or in an associated public location, and update the “Last updated” date above.
+
+
+</body>
+</html>
